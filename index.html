@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<header>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="description" content="">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>D3 Visualization</title>
+   <script src="https://cdn.tailwindcss.com"></script>
+
+   <link rel="testable-projects-fcc" href="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js.">
+</header>
+
+<body class="flex justify-center items-center min-h-screen">
+   <div id="container">
+      <div class="flex justify-center items-center h-20 " id="btn-container">
+         <button btn-id="0" class="btn text-white bg-sky-500 border-b-4 border-sky-700 select-none p-3 rounded-md m-2 hover:bg-sky-600 focus:outline-none focus:border-sky-800 transition-all hover:p-5 hover:text-xl">Video Game Sales</button>
+         <button btn-id="1" class="btn text-white bg-sky-500 border-b-4 border-sky-700 select-none p-3 rounded-md m-2 hover:bg-sky-600 focus:outline-none focus:border-sky-800 transition-all hover:p-5 hover:text-xl">Kickstarter Pledges</button>
+         <button btn-id="2" class="btn text-white bg-sky-500 border-b-4 border-sky-700 select-none p-3 rounded-md m-2 hover:bg-sky-600 focus:outline-none focus:border-sky-800 transition-all hover:p-5 hover:text-xl">Movie Sales</button>
+      </div>
+      <h1 class="text-center text-6xl" id="title"></h1>
+      <p class="text-center text-lg mb-5 mt-2" id="description"></p>
+      <div id="chartContainer">
+         <div id="tooltip" style="opacity:0;"
+            class="transition-opacity backdrop-blur-sm absolute select-none bg-white/60 text-center container-sm p-2 rounded-md shadow-gray-500/40 shadow-sm">
+         </div>
+         
+
+      </div>
+
+   </div>
+
+   <script src="https://d3js.org/d3.v7.min.js"></script>
+   <script defer type="module" src="./index.js"></script>
+   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
